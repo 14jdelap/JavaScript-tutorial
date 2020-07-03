@@ -1,0 +1,11 @@
+#!/home/jpuente/.nvm/versions/node/v12.18.1/bin/node
+
+function square(number) {
+    if (number < 0) {
+        return "We can't get the square root of negative number — the result isn't a valid number!.";
+    } else {
+        return Math.sqrt(number);
+    }
+}
+
+stringMessage("");

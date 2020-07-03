@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn Enough JavaScript</title>
-    <script>
-        alert("hello, world!");
-        alert("this is the second aler!");
-    </script>
 </head>
 <body>
     <h1>Hello, world</h1>
     <p>This page includes an alart written in JS</p>
+    <p id='hi'></p>
+    <script>
+        const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+        let date = new Date();
+        let day = daysOfTheWeek[date.getDay()];
+        alert(`Hello! Today is ${day}.`)
+        document.getElementById('hi').innerHTML = `Hey there! Today is ${day}.`;
+    </script>
 </body>
 </html>
